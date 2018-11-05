@@ -1,0 +1,32 @@
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table th {
+    text-align: center;
+}
+
+.edit-general-image {
+    display: none;
+}
+
+.fileinput-exists img, .products-table img, .orders-table img, .product-images {
+    width: 80px;
+    height: 80px;
+}
+
+.modal-body img {
+    width: 80px;
+    height: 80px;
+    margin: 0 15px 15px 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.create-profile-row, .type-row {
+    display: flex;
+    align-items: center;
+}
