@@ -149,7 +149,7 @@ class SellerController extends Controller
             $order->confirmed_by_seller = 1;
             $order->save();
             Mail::send('emails.order-confirmation', $data, function ($message) use ($order) {
-                $message->to('shushotam@gmail.com', $order->customer->name)
+                $message->to($order->customer->email, $order->customer->name)
                     ->subject('Order Confirmation');
                 $message->from('simpleshop@gmail.com', 'Simple Shop');
             });
